@@ -1,4 +1,4 @@
-# Level 1
+# Level 3
 
 ## Problem
 
@@ -15,7 +15,7 @@
 - Host **B**
 	- Interface **B1**: `?/?`
 - Host **C**
-	- Interface **C1**: IP `?/255.255.255.128`
+	- Interface **C1**: `?/255.255.255.128`
 
 ## Solution:
 
@@ -26,4 +26,4 @@
 - Host **B**
 	- Interface **B1**: `104.198.173.124/255.255.255.128`
 - Host **C**
-	- Interface **C1**: IP `104.198.173.123/25`
+	- Interface **C1**: `104.198.173.123/25`
