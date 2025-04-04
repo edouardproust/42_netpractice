@@ -1,0 +1,152 @@
+body {
+    font-family: sans-serif;
+    padding:0px;
+    margin:0px;
+	background-image: url("img/bg.webp");
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.svg_layer {
+	height: 100vh;
+	width: 100vw;
+}
+
+
+/* message box in index.html */
+
+.intro_div {
+    background-color: rgba(76, 70, 200, 0.6);
+    padding: 10px;
+    border-radius:10px;
+    width: 50%;
+    margin:auto;
+    margin-top: 25%;
+    text-align: center;
+}
+
+
+/* goals div */
+.goals_div {
+	z-index: 100;
+    background-color: rgba(76, 70, 200, 0.6);
+    width:calc(100% - 20px);
+    border-radius:10px;
+    padding: 10px;
+	margin: 10px;
+}
+
+.goals_div h2 {
+    margin:5px;
+}
+
+
+/* SVG layer */
+.svg_layer {
+    z-index:-4;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+
+/* logs window */
+.logs_div {
+	z-index: 100;
+    background-color: rgba(249, 208, 130, 0.9);
+	margin: 10px;
+	padding: 10px;
+    border-radius: 10px;
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    width:400;
+    height:300;
+    font-size:80%;
+    overflow-y: scroll;
+}
+
+
+/* host div (image) */
+.host_div {
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* will be updated by script : position, top, left, width, height, background-image */
+}
+
+
+/* host info (name, route) div */
+.host_info_div {
+    min-width: 170px;
+    max-width: 220px;
+    min-height: 50px;
+    background-color: rgba(76, 70, 200, 0.9);
+    padding: 5px;
+    border-radius: 10px;
+    /* will be updated by script : position, top, left */
+}
+
+.host_info_div table {
+	color: white;
+	font-weight: bold;
+    text-align:center;
+}
+
+.if_tab {
+    border-collapse: collapse;
+}
+
+/* interface div */
+.itf_div {
+	z-index: 50;
+    min-width: 176px;
+    height: 100px;
+	padding: 10px;
+    background-color: rgba(76, 70, 200, 0.6);
+    border-radius: 3px;
+    /* will be updated by script : position, top, left */
+}
+
+/* intro footnote */
+.footnote {
+    font-size:70%;
+    font-style:italic;
+}
+
+[type="button"] {
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	background-color: white;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 20px 10px 5px 5px;
+	transition: all 0.3s ease;
+}
+
+[type="button"]:hover {
+	background-color: rgba(76, 70, 200, 1);
+	color: white;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	transform: translateY(-1px);
+  }
+
+[type="button"]:active {
+background-color: rgba(76, 70, 200, 1);
+color: white;
+box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+transform: translateY(0);
+}
+
+tr > td:first-child {
+	padding-right: 10px;
+}
+
+.itf_div_title {
+	font-weight: bold;
+}
